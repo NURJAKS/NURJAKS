@@ -4,16 +4,18 @@
 
 Я инженер-разработчик из Казахстана, совмещающий учебу в университете с коммерческой практикой. Специализируюсь на проектировании производительных серверных архитектур, обеспечении качества ПО, кибербезопасности и интеграции AI-агентов в прикладные задачи.
 
-## 🛠 Технический стек
 
-| Направление | Технологии |
-| :--- | :--- |
-| **Языки программирования** | Python, TypeScript, JavaScript, Go |
-| **Backend & Фреймворки** | FastAPI, NestJS, Django, Next.js, Angular |
-| **Базы данных & Кэширование**| PostgreSQL, MongoDB, Redis, Prisma, TypeORM |
-| **Инфраструктура & DevOps** | Docker, Nginx, Linux (Ubuntu, OpenWrt) |
-| **QA & Тестирование** | Описание тест-планов, Jira, TestRail |
-| **AI & Кибербезопасность** | Gemini API, MCP (Model Context Protocol), Сетевой аудит, WireGuard |
+Tech Stack
+Languages
+Python Java C++ C C# SQL
+
+Databases
+Elasticsearch MongoDB Neo4j Redis Cassandra Apache Spark
+
+Tools & Environments
+Git Postman Wireshark Linux Azure VirtualBox
+
+
 
 ## 🚀 Чем я занимаюсь
 
