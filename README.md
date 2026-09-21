@@ -50,4 +50,4 @@
 ---
 
 ## Contact
-- [Email](mailto:RazCohenP@gmail.com) | [LinkedIn](https://www.linkedin.com/in/raz-cohen-p) | [GitHub](https://github.com/Raz99)
+- [Email](mailto:nurbekabildaev89@gmail.com) | [LinkedIn](https://www.linkedin.com/in/nurbek-abildaev-b1b277345) | [GitHub](https://github.com/NURJAKS)
