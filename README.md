@@ -1,12 +1,14 @@
-<h1 data-importer="text" align="center">hey there 👋</h1>
+# Hi, I'm Nurbek Abildaev 👋
 
-###
+**Backend & Full-Stack Developer** from Kazakhstan. I build production backends, browser extensions and AI-powered tools, and I combine my university studies with commercial work.
 
-<h3 data-importer="text" align="left">👩‍💻  About Me</h3>
+## What I do
 
-###
+- **Backend & databases:** Node.js, TypeScript, PostgreSQL. I've built FIFO/FEFO inventory transaction logic for a B2B SaaS (WMS) and cut API response times from 2.5s to 0.5s by optimizing queries, using Redis pipelines for high-load paths.
+- **Browser extensions:** I built and launched [PhishGuard AI](https://github.com/NURJAKS), a Chrome extension that analyzes links for phishing with an LLM. It streams results via Server-Sent Events to stay fast within Manifest V3 limits.
+- **AI integrations:** LLM agents and tools built on the Model Context Protocol (MCP), using Gemini and vLLM to automate workflows and generate content.
+- **Quality & security:** QA and test automation, network auditing, vulnerability analysis and security tooling.
 
-<p data-importer="text" align="left">I'm ... from ....<br><br>- 🔭 I’m working as ...<br>- 📚 I'm currently learning ...<br>- ⚡ In my free time I ...</p>
 
 ###
 
