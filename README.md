@@ -87,13 +87,18 @@
 ###
 
 <div data-importer="socials" align="center">
-  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
-  <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="discord logo"  />
-  <img src="https://img.shields.io/static/v1?message=GitLab&logo=gitlab&label=&color=FC6D26&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gitlab logo"  />
-  <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="instagram logo"  />
-  <img src="https://img.shields.io/static/v1?message=Telegram&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="telegram logo"  />
-  <img src="https://img.shields.io/static/v1?message=TryHackMe&logo=tryhackme&label=&color=88cc14&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="tryhackme logo"  />
-  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gmail logo"  />
+  <a href="https://www.linkedin.com/in/nurbek-abildaev-b1b277345">
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo" />
+  </a>
+  <a href="https://t.me/NURJAKS1">
+    <img src="https://img.shields.io/static/v1?message=Telegram&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="telegram logo" />
+  </a>
+  <a href="https://www.instagram.com/nurjaks_89">
+    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="instagram logo" />
+  </a>
+  <a href="mailto:nurbekabildaev89@gmail.com">
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gmail logo" />
+  </a>
 </div>
 
 ###
@@ -107,17 +112,6 @@
 </div>
 
 ###
-
-
-## Contact
-- [Email](mailto:nurbekabildaev89@gmail.com) | [LinkedIn](https://www.linkedin.com/in/nurbek-abildaev-b1b277345) | [GitHub](https://github.com/NURJAKS)
-
-# Hi, I'm Nurbek Abilda!
-
-**Backend & Full-Stack Developer | QA Engineer**
-
-Я инженер-разработчик из Казахстана, совмещающий учебу в университете с коммерческой практикой. Специализируюсь на проектировании производительных серверных архитектур, обеспечении качества ПО, кибербезопасности и интеграции AI-агентов в прикладные задачи.
-
 
 **Languages**
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -158,12 +152,3 @@
 ![OWASP](https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white)
 ![Nmap](https://img.shields.io/badge/Nmap-0B0C0C?style=for-the-badge)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=Wireshark&logoColor=white)
-
----
-
-## 🚀 Чем я занимаюсь
-
-Мой инженерный фокус направлен на решение реальных бизнес-задач через код:
-*   **Архитектура и оптимизация:** Разрабатываю бэкенд-сервисы с использованием пайплайнов Redis для высоконагруженных систем (например, складской учет WMS) и строю централизованные системы логирования.
-*   **AI-интеграции:** Создаю решения на базе Model Context Protocol (MCP) и внедряю LLM (Gemini, vLLM) для автоматизации рабочих процессов и генерации контента.
-*   **Кибербезопасность:** Занимаюсь сетевым аудитом, анализом уязвимостей и разработкой защитных инструментов, таких как **PhishGuard AI** (расширение для анализа фишинговых ссылок).
