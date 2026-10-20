@@ -10,6 +10,31 @@
 
 ---
 
+### 🛠 Core Technical Stack
+
+**Languages & Runtimes**  
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![SQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+
+**Data, Queues & Distributed Systems**  
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![BullMQ](https://img.shields.io/badge/BullMQ-FF5722?style=flat-square&logo=redis&logoColor=white)
+![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)
+![Cloudflare D1](https://img.shields.io/badge/Cloudflare_D1-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+
+**Architecture & DevOps**  
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kong Gateway](https://img.shields.io/badge/Kong-003459?style=flat-square&logo=kong&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+
+---
+
 ### 🚀 Production & Engineering Highlights
 
 * **Distributed Media Generation Pipeline ([ai-video-generator-saas](https://github.com/NURJAKS/ai-video-generator-saas)):**
@@ -18,31 +43,20 @@
 * **Database Optimization & Inventory State Machines (B2B SaaS WMS):**
   Engineered atomic FIFO/FEFO inventory allocation logic in PostgreSQL. Optimized complex relational queries and implemented **Redis pipelining** for high-load transaction paths, reducing P95 API response times from **2.5s down to 0.5s** (80% latency reduction).
 
-* **Edge-Native Serverless Architecture ([crm-website](https://github.com/NURJAKS/crm-website)):**
+* **Edge-Native Serverless Architecture ([edge-serverless-crm](https://github.com/NURJAKS/edge-serverless-crm)):**
   Engineered an edge-native CRM portal deployed across **Cloudflare Workers** and **Cloudflare D1** distributed SQL storage, leveraging Web Crypto JWT authentication for sub-10ms global edge execution.
 
-* **Microservices Task Orchestration ([Mini-Trello](https://github.com/NURJAKS/Mini-Trello)):**
+* **Microservices Task Orchestration ([distributed-kanban-microservices](https://github.com/NURJAKS/distributed-kanban-microservices)):**
   Implemented a cloud-native Kanban platform enforcing the **Database-per-Service** pattern across decoupled PostgreSQL instances, orchestrated via **Kong API Gateway** (centralized JWT validation, rate limiting) with **Celery & Redis** asynchronous workers.
 
-* **Real-Time Fleet Routing Engine ([smart_logistics](https://github.com/NURJAKS/smart_logistics)):**
+* **Real-Time Fleet Routing Engine ([smart-logistics-engine](https://github.com/NURJAKS/smart-logistics-engine)):**
   Developed a containerized routing backend composing OpenStreetMap road networks (**OSRM**), vehicle routing problem solvers (**VROOM**), and ML-based delay estimation with live WebSocket dispatch telemetry.
 
-* **AI Tooling & Codebase Intelligence ([ZOD-mcp-server](https://github.com/NURJAKS/ZOD-mcp-server)):**
+* **Threat Intelligence & LLM Security ([phishguard-threat-intelligence](https://github.com/NURJAKS/phishguard-threat-intelligence)):**
+  Built a real-time anti-phishing engine combining lexical parsing, WHOIS/SSL telemetry, and multi-LLM security triage streaming live detections via Server-Sent Events (SSE).
+
+* **AI Tooling & Codebase Intelligence ([zod-mcp-server](https://github.com/NURJAKS/zod-mcp-server)):**
   Created an extensible **Model Context Protocol (MCP)** server providing AST-based code transforms, hybrid semantic vector search, and persistent agent memory.
-
----
-
-### 🛠 Core Technical Stack
-
-| Domain | Technologies & Patterns |
-| :--- | :--- |
-| **Languages** | TypeScript, JavaScript, Python, Go, SQL |
-| **Backend & Frameworks** | Node.js (NestJS, Express), Python (FastAPI, Flask), Go (Fiber) |
-| **Distributed Systems & Queues** | BullMQ, Celery, Redis (Caching, Pub/Sub, Pipelines), RabbitMQ concepts |
-| **Databases & Storage** | PostgreSQL (Indexing, Partitioning, ACID), Cloudflare D1, MongoDB, MinIO (S3) |
-| **Architecture Patterns** | Microservices, Event-Driven Architecture, Database-per-Service, CQRS principles |
-| **Infrastructure & DevOps** | Docker, Docker Compose, Kong API Gateway, Linux / Bash, Nginx, GitHub Actions |
-| **Protocols & Networking** | RESTful APIs, WebSockets, Server-Sent Events (SSE), Webhooks, gRPC principles |
 
 ---
 
@@ -51,11 +65,13 @@
 | Repository | Architecture & Focus | Core Stack |
 | :--- | :--- | :--- |
 | [ai-video-generator-saas](https://github.com/NURJAKS/ai-video-generator-saas) | Event-driven media pipeline, worker pools, real-time telemetry | NestJS, BullMQ, Redis, FFmpeg, Angular |
-| [Mini-Trello](https://github.com/NURJAKS/Mini-Trello) | Database-per-Service isolation, API Gateway pattern | Python, Flask, Kong, PostgreSQL, Celery |
-| [smart_logistics](https://github.com/NURJAKS/smart_logistics) | Real-time vehicle routing solver & fleet dispatch engine | FastAPI, OSRM, VROOM, WebSockets, Docker |
-| [ZOD-mcp-server](https://github.com/NURJAKS/ZOD-mcp-server) | Context protocol server for LLM agents & semantic search | TypeScript, MCP Protocol, Vector Search |
+| [distributed-kanban-microservices](https://github.com/NURJAKS/distributed-kanban-microservices) | Database-per-Service isolation, API Gateway pattern | Python, Flask, Kong, PostgreSQL, Celery |
+| [smart-logistics-engine](https://github.com/NURJAKS/smart-logistics-engine) | Real-time vehicle routing solver & fleet dispatch engine | FastAPI, OSRM, VROOM, WebSockets, Docker |
+| [zod-mcp-server](https://github.com/NURJAKS/zod-mcp-server) | Context protocol server for LLM agents & semantic search | TypeScript, MCP Protocol, Vector Search |
+| [edge-serverless-crm](https://github.com/NURJAKS/edge-serverless-crm) | Edge-native distributed serverless CRM & client portal | Cloudflare Workers, D1 SQL, React 18 |
+| [phishguard-threat-intelligence](https://github.com/NURJAKS/phishguard-threat-intelligence) | Threat intelligence & anti-phishing heuristic analysis engine | PHP, Python, LLM Security, SSE |
 | [freelance-aggregator-pipeline](https://github.com/NURJAKS/freelance-aggregator-pipeline) | Resilient ingestion pipeline with deduplication & alert queues | Python, Asyncio, Telegram API, SQLite |
-| [crm-website](https://github.com/NURJAKS/crm-website) | Edge-native distributed serverless CRM & client portal | Cloudflare Workers, D1 SQL, React 18 |
+| [omnichannel-lead-router](https://github.com/NURJAKS/omnichannel-lead-router) | Omnichannel CRM & lead routing service with webhook pipelines | FastAPI, Aiogram 3, WhatsApp API, Sheets |
 
 ---
 
