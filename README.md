@@ -10,6 +10,27 @@
 
 ---
 
+<!-- DYNAMIC_PROFILE:START -->
+<div align="center">
+  <kbd>📍 Almaty: +4°C (Smoky haze)</kbd> • <kbd>⚡ Status: Engineering Scalable Systems</kbd> • <kbd>🔄 Synced: 28 Oct 2026, 18:18 UTC</kbd>
+</div>
+
+<br/>
+
+> 💡 **Architectural Thought of the Day:**  
+> *" Make it work, make it right, make it fast — strictly in that order. (Kent Beck) "*
+
+<br/>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=NURJAKS&show_icons=true&theme=radical&hide_border=true&count_private=true" height="150" alt="GitHub Stats"/>
+  &nbsp;&nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NURJAKS&layout=compact&theme=radical&hide_border=true" height="150" alt="Top Languages"/>
+</p>
+<!-- DYNAMIC_PROFILE:END -->
+
+---
+
 ### 🛠 Core Technical Stack
 
 **Core Languages**  
