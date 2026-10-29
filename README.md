@@ -3,60 +3,55 @@
 ### Backend & Distributed Systems Engineer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nurbek-abildaev-b1b277345)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/NURJAKS1)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/nurjaks_89)
 [![Email](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:nurbekabildaev89@gmail.com)
+[![Status](https://img.shields.io/badge/Availability-Open%20to%20Senior%20Roles-059669?style=flat-square)](mailto:nurbekabildaev89@gmail.com)
 
 > Backend engineer specializing in **event-driven distributed systems**, **high-concurrency APIs**, and **production data pipelines**. Focused on database performance optimization, resilient worker topologies, and measurable business impact.
 
 ---
 
-<!-- DYNAMIC_PROFILE:START -->
-<div align="center">
-  <kbd>📍 Almaty: +2°C (Patchy rain nearby)</kbd> • <kbd>⚡ Status: Engineering Scalable Systems</kbd> • <kbd>🔄 Synced: 29 Oct 2026, 03:40 UTC</kbd>
-</div>
+### 🏛 Architectural Blueprint & System Topology
 
-<br/>
+```mermaid
+flowchart LR
+    subgraph Ingress["Ingress & Gateway"]
+        Client[Clients / Consumers] -->|HTTP / WebSockets| Gateway["Kong API Gateway\n(Rate Limiting & Auth)"]
+    end
 
-> 💡 **Architectural Thought of the Day:**  
-> *" Simplicity is prerequisite for reliability. (Edsger W. Dijkstra) "*
+    subgraph Core["Application Layer"]
+        Gateway --> Services["Backend Services\n(Go / NestJS / FastAPI)"]
+    end
 
-<br/>
+    subgraph State["State & Queues"]
+        Services -->|Partitioned Data| DB[("PostgreSQL\n(FIFO/FEFO States)")]
+        Services -->|Hot Cache & Pipelining| Redis[("Redis Cache")]
+        Services -->|Async Tasks| Queue["Message Brokers\n(BullMQ / RabbitMQ / Celery)"]
+    end
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=NURJAKS&show_icons=true&theme=radical&hide_border=true&count_private=true" height="150" alt="GitHub Stats"/>
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NURJAKS&layout=compact&theme=radical&hide_border=true" height="150" alt="Top Languages"/>
-</p>
-<!-- DYNAMIC_PROFILE:END -->
+    subgraph Workers["Isolated Compute Workers"]
+        Queue --> W1["Worker: Media Transcoding (FFmpeg)"]
+        Queue --> W2["Worker: Event Routing & Aggregation"]
+        Queue --> W3["Worker: Voice Pipeline & LLM Triage"]
+    end
+
+    style Ingress fill:#161b22,stroke:#30363d,stroke-width:1px,color:#e6edf3
+    style Core fill:#161b22,stroke:#30363d,stroke-width:1px,color:#e6edf3
+    style State fill:#161b22,stroke:#30363d,stroke-width:1px,color:#e6edf3
+    style Workers fill:#161b22,stroke:#30363d,stroke-width:1px,color:#e6edf3
+```
 
 ---
 
 ### 🛠 Core Technical Stack
 
-**Core Languages**  
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-CC292B?style=flat-square&logo=sqlite&logoColor=white)
-
-**Backend Frameworks & Runtime**  
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-
-**Databases, Cache & Asynchronous Queues**  
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![BullMQ](https://img.shields.io/badge/BullMQ-FF5722?style=flat-square&logo=redis&logoColor=white)
-![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
-
-**Architecture, Protocols & DevOps**  
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socketdotio&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+| Domain | Technologies & Frameworks |
+| :--- | :--- |
+| **Languages** | ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-CC292B?style=flat-square&logo=sqlite&logoColor=white) |
+| **Backend Frameworks** | ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) |
+| **Queues & Asynchronous** | ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![BullMQ](https://img.shields.io/badge/BullMQ-FF5722?style=flat-square&logo=redis&logoColor=white) ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white) ![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white) |
+| **Databases & Storage** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Cloudflare D1](https://img.shields.io/badge/Cloudflare_D1-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) |
+| **Infrastructure & DevOps** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Kong](https://img.shields.io/badge/Kong_Gateway-1155C0?style=flat-square&logo=kong&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) |
 
 ---
 
@@ -104,6 +99,8 @@
 
 ---
 
+<!-- DYNAMIC_PROFILE:START -->
 <div align="center">
-  <sub>Engineered for reliability, scalability, and measurable performance.</sub>
+  <sub>💭 Architectural Principle: <i>"A distributed system is one in which the failure of a computer you didn't even know existed can render your own computer unusable. (Leslie Lamport)"</i></sub>
 </div>
+<!-- DYNAMIC_PROFILE:END -->
