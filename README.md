@@ -12,33 +12,21 @@
 
 ### 🏛 Architectural Blueprint & System Topology
 
-```mermaid
-flowchart LR
-    subgraph Ingress["Ingress & Gateway"]
-        Client[Clients / Consumers] -->|HTTP / WebSockets| Gateway["Kong API Gateway\n(Rate Limiting & Auth)"]
-    end
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/architecture-light.svg">
+    <img src="assets/architecture-dark.svg" alt="Production Event-Driven Distributed Systems Topology" width="100%">
+  </picture>
+</p>
 
-    subgraph Core["Application Layer"]
-        Gateway --> Services["Backend Services\n(Go / NestJS / FastAPI)"]
-    end
+<p align="center">
+  <em>Standard event-driven microservices architecture I design and implement for high-load systems (Go/NestJS, PostgreSQL, Redis, BullMQ/RabbitMQ).</em>
+</p>
 
-    subgraph State["State & Queues"]
-        Services -->|Partitioned Data| DB[("PostgreSQL\n(FIFO/FEFO States)")]
-        Services -->|Hot Cache & Pipelining| Redis[("Redis Cache")]
-        Services -->|Async Tasks| Queue["Message Brokers\n(BullMQ / RabbitMQ / Celery)"]
-    end
-
-    subgraph Workers["Isolated Compute Workers"]
-        Queue --> W1["Worker: Media Transcoding (FFmpeg)"]
-        Queue --> W2["Worker: Event Routing & Aggregation"]
-        Queue --> W3["Worker: Voice Pipeline & LLM Triage"]
-    end
-
-    style Ingress fill:#161b22,stroke:#30363d,stroke-width:1px,color:#e6edf3
-    style Core fill:#161b22,stroke:#30363d,stroke-width:1px,color:#e6edf3
-    style State fill:#161b22,stroke:#30363d,stroke-width:1px,color:#e6edf3
-    style Workers fill:#161b22,stroke:#30363d,stroke-width:1px,color:#e6edf3
-```
+<div align="center">
+  <sub><code>Golang</code> · <code>TypeScript</code> · <code>Python</code> · <code>NestJS</code> · <code>FastAPI</code> · <code>PostgreSQL</code> · <code>Redis</code> · <code>Kong API Gateway</code> · <code>BullMQ</code> · <code>Docker</code> · <code>Linux</code></sub>
+</div>
 
 ---
 

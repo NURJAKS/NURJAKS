@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 470" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+
+    <linearGradient id="ingressGradLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff" />
+      <stop offset="100%" stop-color="#e0f2fe" />
+    </linearGradient>
+
+    <linearGradient id="appGradLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdf4" />
+      <stop offset="100%" stop-color="#dcfce7" />
+    </linearGradient>
+
+    <linearGradient id="dataGradLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="100%" stop-color="#fef3c7" />
+    </linearGradient>
+
+    <linearGradient id="workerGradLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#faf5ff" />
+      <stop offset="100%" stop-color="#f3e8ff" />
+    </linearGradient>
+
+    <!-- Arrow Markers -->
+    <marker id="arrowLight" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b" />
+    </marker>
+    <marker id="arrowCyanLight" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284c7" />
+    </marker>
+    <marker id="arrowGreenLight" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669" />
+    </marker>
+    <marker id="arrowAmberLight" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#d97706" />
+    </marker>
+    <marker id="arrowPurpleLight" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#7c3aed" />
+    </marker>
+  </defs>
+
+  <style>
+    .title-light { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; }
+    .node-header-light { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 13px; fill: #0f172a; }
+    .node-sub-light { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 500; font-size: 11px; fill: #334155; }
+    .node-tech-light { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 10px; }
+    .edge-label-light { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 10px; }
+    .card-light { rx: 8px; ry: 8px; stroke-width: 1.5px; }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="980" height="470" rx="12" fill="url(#bgGradLight)" stroke="#cbd5e1" stroke-width="1.5" />
+
+  <!-- SECTION 1: INGRESS & GATEWAY -->
+  <rect x="20" y="25" width="210" height="420" rx="10" fill="#f0f9ff" fill-opacity="0.6" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="4,4" />
+  <text x="35" y="50" class="title-light" fill="#0369a1">1 · Ingress &amp; Gateway</text>
+
+  <!-- Client Node -->
+  <g transform="translate(35, 75)">
+    <rect width="180" height="100" class="card-light" fill="url(#ingressGradLight)" stroke="#38bdf8" />
+    <circle cx="24" cy="28" r="10" fill="#0284c7" />
+    <path d="M 21 28 L 27 28 M 24 23 L 24 33" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+    <text x="42" y="32" class="node-header-light">Clients &amp; Ingress</text>
+    <text x="16" y="58" class="node-sub-light">Web Apps, Mobile, Webhooks</text>
+    <rect x="16" y="70" width="148" height="20" rx="4" fill="#e0f2fe" stroke="#bae6fd" stroke-width="1" />
+    <text x="24" y="84" class="node-tech-light" fill="#0369a1">HTTP/2 · WSS · TLS 1.3</text>
+  </g>
+
+  <!-- Gateway Node -->
+  <g transform="translate(35, 275)">
+    <rect width="180" height="145" class="card-light" fill="url(#ingressGradLight)" stroke="#38bdf8" />
+    <circle cx="24" cy="28" r="10" fill="#0284c7" />
+    <path d="M 19 28 L 29 28" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+    <text x="42" y="32" class="node-header-light">Kong API Gateway</text>
+    <text x="16" y="58" class="node-sub-light">• Centralized JWT Auth</text>
+    <text x="16" y="76" class="node-sub-light">• IP &amp; Route Rate Limiting</text>
+    <text x="16" y="94" class="node-sub-light">• Reverse Proxy &amp; SSL Offload</text>
+    <rect x="16" y="112" width="148" height="20" rx="4" fill="#e0f2fe" stroke="#bae6fd" stroke-width="1" />
+    <text x="26" y="126" class="node-tech-light" fill="#0369a1">Kong Gateway · Nginx</text>
+  </g>
+
+  <!-- SECTION 2: APPLICATION SERVICES -->
+  <rect x="255" y="25" width="220" height="420" rx="10" fill="#f0fdf4" fill-opacity="0.6" stroke="#059669" stroke-width="1.5" stroke-dasharray="4,4" />
+  <text x="270" y="50" class="title-light" fill="#047857">2 · Core Application</text>
+
+  <!-- App Services Node -->
+  <g transform="translate(270, 140)">
+    <rect width="190" height="220" class="card-light" fill="url(#appGradLight)" stroke="#34d399" />
+    <circle cx="24" cy="28" r="10" fill="#059669" />
+    <polygon points="21,24 28,28 21,32" fill="#ffffff" />
+    <text x="42" y="32" class="node-header-light">Backend Services</text>
+    <text x="16" y="60" class="node-sub-light">• High-concurrency REST APIs</text>
+    <text x="16" y="80" class="node-sub-light">• Event-driven domain logic</text>
+    <text x="16" y="100" class="node-sub-light">• Atomic state transactions</text>
+    <text x="16" y="120" class="node-sub-light">• Producer queue dispatch</text>
+
+    <rect x="16" y="145" width="158" height="22" rx="4" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1" />
+    <text x="22" y="160" class="node-tech-light" fill="#065f46">Go · NestJS · FastAPI</text>
+
+    <rect x="16" y="175" width="158" height="22" rx="4" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1" />
+    <text x="22" y="190" class="node-tech-light" fill="#065f46">Database-per-Service Isolation</text>
+  </g>
+
+  <!-- SECTION 3: DATA & QUEUES -->
+  <rect x="500" y="25" width="225" height="420" rx="10" fill="#fffbeb" fill-opacity="0.6" stroke="#d97706" stroke-width="1.5" stroke-dasharray="4,4" />
+  <text x="515" y="50" class="title-light" fill="#b45309">3 · State &amp; Queues</text>
+
+  <!-- PostgreSQL -->
+  <g transform="translate(515, 75)">
+    <rect width="195" height="100" class="card-light" fill="url(#dataGradLight)" stroke="#fbbf24" />
+    <text x="16" y="28" class="node-header-light">PostgreSQL Primary</text>
+    <text x="16" y="48" class="node-sub-light">Partitioned states, FIFO/FEFO</text>
+    <text x="16" y="66" class="node-sub-light">ACID transactions &amp; indexes</text>
+    <rect x="16" y="74" width="163" height="18" rx="4" fill="#fef3c7" stroke="#fde68a" stroke-width="1" />
+    <text x="22" y="87" class="node-tech-light" fill="#92400e">PostgreSQL 15 · Cloudflare D1</text>
+  </g>
+
+  <!-- Redis -->
+  <g transform="translate(515, 190)">
+    <rect width="195" height="100" class="card-light" fill="url(#dataGradLight)" stroke="#fbbf24" />
+    <text x="16" y="28" class="node-header-light">Redis In-Memory Cache</text>
+    <text x="16" y="48" class="node-sub-light">Sub-millisecond read cache</text>
+    <text x="16" y="66" class="node-sub-light">Pipelining &amp; session tokens</text>
+    <rect x="16" y="74" width="163" height="18" rx="4" fill="#fef3c7" stroke="#fde68a" stroke-width="1" />
+    <text x="22" y="87" class="node-tech-light" fill="#92400e">Redis 7 · Pipelining · TTL</text>
+  </g>
+
+  <!-- Message Brokers -->
+  <g transform="translate(515, 305)">
+    <rect width="195" height="115" class="card-light" fill="url(#dataGradLight)" stroke="#fbbf24" />
+    <text x="16" y="28" class="node-header-light">Message Brokers</text>
+    <text x="16" y="48" class="node-sub-light">Dead letter queues &amp; retries</text>
+    <text x="16" y="66" class="node-sub-light">Distributed task scheduling</text>
+    <rect x="16" y="80" width="163" height="22" rx="4" fill="#fef3c7" stroke="#fde68a" stroke-width="1" />
+    <text x="22" y="95" class="node-tech-light" fill="#92400e">BullMQ · RabbitMQ · Celery</text>
+  </g>
+
+  <!-- SECTION 4: ISOLATED WORKERS -->
+  <rect x="750" y="25" width="210" height="420" rx="10" fill="#faf5ff" fill-opacity="0.6" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4,4" />
+  <text x="765" y="50" class="title-light" fill="#6d28d9">4 · Compute Workers</text>
+
+  <!-- Worker 1: Media -->
+  <g transform="translate(765, 75)">
+    <rect width="180" height="100" class="card-light" fill="url(#workerGradLight)" stroke="#a78bfa" />
+    <text x="14" y="26" class="node-header-light">Media Transcoding</text>
+    <text x="14" y="46" class="node-sub-light">Async video compositing</text>
+    <text x="14" y="62" class="node-sub-light">Isolated CPU/GPU pools</text>
+    <rect x="14" y="72" width="152" height="18" rx="4" fill="#f3e8ff" stroke="#e9d5ff" stroke-width="1" />
+    <text x="20" y="85" class="node-tech-light" fill="#5b21b6">FFmpeg · BullMQ Worker</text>
+  </g>
+
+  <!-- Worker 2: Fleet & Events -->
+  <g transform="translate(765, 190)">
+    <rect width="180" height="100" class="card-light" fill="url(#workerGradLight)" stroke="#a78bfa" />
+    <text x="14" y="26" class="node-header-light">Logistics &amp; Routing</text>
+    <text x="14" y="46" class="node-sub-light">VRP solvers &amp; road graphs</text>
+    <text x="14" y="62" class="node-sub-light">Live telemetry streaming</text>
+    <rect x="14" y="72" width="152" height="18" rx="4" fill="#f3e8ff" stroke="#e9d5ff" stroke-width="1" />
+    <text x="20" y="85" class="node-tech-light" fill="#5b21b6">VROOM · OSRM · WebSockets</text>
+  </g>
+
+  <!-- Worker 3: AI Agents -->
+  <g transform="translate(765, 305)">
+    <rect width="180" height="115" class="card-light" fill="url(#workerGradLight)" stroke="#a78bfa" />
+    <text x="14" y="26" class="node-header-light">Autonomous AI Agent</text>
+    <text x="14" y="46" class="node-sub-light">Voice STT/TTS &amp; triage</text>
+    <text x="14" y="62" class="node-sub-light">Isolated git worktrees</text>
+    <rect x="14" y="78" width="152" height="24" rx="4" fill="#f3e8ff" stroke="#e9d5ff" stroke-width="1" />
+    <text x="20" y="94" class="node-tech-light" fill="#5b21b6">Whisper · Gemini · Worktree</text>
+  </g>
+
+  <!-- ARROWS & CONNECTORS -->
+  <!-- Client to Gateway -->
+  <path d="M 125 175 L 125 275" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowCyanLight)" />
+  <rect x="65" y="215" width="120" height="20" rx="4" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" />
+  <text x="75" y="229" class="edge-label-light" fill="#0369a1">HTTPS / WSS</text>
+
+  <!-- Gateway to App -->
+  <path d="M 215 345 L 242 345 L 242 250 L 270 250" fill="none" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowCyanLight)" />
+
+  <!-- App to DB -->
+  <path d="M 460 200 L 487 200 L 487 125 L 515 125" fill="none" stroke="#d97706" stroke-width="2" marker-end="url(#arrowAmberLight)" />
+  <rect x="460" y="100" width="48" height="16" rx="3" fill="#ffffff" stroke="#d97706" stroke-width="1" />
+  <text x="463" y="112" class="edge-label-light" fill="#b45309">SQL</text>
+
+  <!-- App to Redis -->
+  <path d="M 460 240 L 515 240" fill="none" stroke="#d97706" stroke-width="2" marker-end="url(#arrowAmberLight)" />
+  <rect x="465" y="230" width="45" height="16" rx="3" fill="#ffffff" stroke="#d97706" stroke-width="1" />
+  <text x="468" y="242" class="edge-label-light" fill="#b45309">Cache</text>
+
+  <!-- App to Queue -->
+  <path d="M 460 280 L 487 280 L 487 360 L 515 360" fill="none" stroke="#d97706" stroke-width="2" marker-end="url(#arrowAmberLight)" />
+  <rect x="460" y="342" width="50" height="16" rx="3" fill="#ffffff" stroke="#d97706" stroke-width="1" />
+  <text x="463" y="354" class="edge-label-light" fill="#b45309">Publish</text>
+
+  <!-- Queue to Worker 1 -->
+  <path d="M 710 330 L 735 330 L 735 125 L 765 125" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrowPurpleLight)" />
+
+  <!-- Queue to Worker 2 -->
+  <path d="M 710 360 L 735 360 L 735 240 L 765 240" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrowPurpleLight)" />
+
+  <!-- Queue to Worker 3 -->
+  <path d="M 710 390 L 765 390" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrowPurpleLight)" />
+</svg>
