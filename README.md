@@ -62,6 +62,9 @@
 
 ### 🚀 Production & Engineering Highlights
 
+* **Voice-Driven Engineering Agent ([jarvis-dev-agent](https://github.com/NURJAKS/jarvis-dev-agent)):**
+  Built a terminal-native AI agent that routes multilingual voice commands (RU/KZ/EN/KO) through a Whisper STT pipeline into real workflows: pre-flight diff review with PR generation, GitHub Actions failure triage, git pickaxe archaeology and **autonomous tasks in isolated git worktrees**, backed by a **Gemini → Groq → Ollama** failover chain.
+
 * **Distributed Media Generation Pipeline ([ai-video-generator-saas](https://github.com/NURJAKS/ai-video-generator-saas)):**
   Architected an asynchronous video composition engine using **NestJS**, **BullMQ**, and **FFmpeg**. Quarantined compute-heavy AI rendering workflows into isolated worker queues, maintaining **sub-50ms API response latencies** while streaming bidirectional progress updates over WebSockets.
 
@@ -89,6 +92,7 @@
 
 | Repository | Architecture & Focus | Core Stack |
 | :--- | :--- | :--- |
+| [jarvis-dev-agent](https://github.com/NURJAKS/jarvis-dev-agent) | Voice-first AI agent, intent routing, multi-provider LLM failover | Python, Whisper, Gemini, Groq, Ollama, FFmpeg |
 | [ai-video-generator-saas](https://github.com/NURJAKS/ai-video-generator-saas) | Event-driven media pipeline, worker pools, real-time telemetry | NestJS, BullMQ, Redis, FFmpeg, Angular |
 | [distributed-kanban-microservices](https://github.com/NURJAKS/distributed-kanban-microservices) | Database-per-Service isolation, API Gateway pattern | Python, Flask, Kong, PostgreSQL, Celery |
 | [smart-logistics-engine](https://github.com/NURJAKS/smart-logistics-engine) | Real-time vehicle routing solver & fleet dispatch engine | FastAPI, OSRM, VROOM, WebSockets, Docker |
