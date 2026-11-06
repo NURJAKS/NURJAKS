@@ -88,6 +88,6 @@
 
 <!-- DYNAMIC_PROFILE:START -->
 <div align="center">
-  <sub>💭 Architectural Principle: <i>"Good architecture is about making decisions easy to change later as requirements evolve."</i></sub>
+  <sub>💭 Architectural Principle: <i>"Simplicity is prerequisite for reliability. (Edsger W. Dijkstra)"</i></sub>
 </div>
 <!-- DYNAMIC_PROFILE:END -->
