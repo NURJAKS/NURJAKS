@@ -88,6 +88,6 @@
 
 <!-- DYNAMIC_PROFILE:START -->
 <div align="center">
-  <sub>💭 Architectural Principle: <i>"Cache invalidation and naming things are the two hardest problems in computer science. Choose cache TTLs wisely."</i></sub>
+  <sub>💭 Architectural Principle: <i>"First, solve the problem. Then, write the code. (John Johnson)"</i></sub>
 </div>
 <!-- DYNAMIC_PROFILE:END -->
