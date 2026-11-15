@@ -88,6 +88,6 @@
 
 <!-- DYNAMIC_PROFILE:START -->
 <div align="center">
-  <sub>💭 Architectural Principle: <i>"First, solve the problem. Then, write the code. (John Johnson)"</i></sub>
+  <sub>💭 Architectural Principle: <i>"Good architecture is about making decisions easy to change later as requirements evolve."</i></sub>
 </div>
 <!-- DYNAMIC_PROFILE:END -->
