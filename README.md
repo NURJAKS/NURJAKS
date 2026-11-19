@@ -88,6 +88,6 @@
 
 <!-- DYNAMIC_PROFILE:START -->
 <div align="center">
-  <sub>💭 Architectural Principle: <i>"A distributed system is one in which the failure of a computer you didn't even know existed can render your own computer unusable. (Leslie Lamport)"</i></sub>
+  <sub>💭 Architectural Principle: <i>"In distributed systems, expect everything to fail all the time. Design idempotent retries and resilient fallbacks."</i></sub>
 </div>
 <!-- DYNAMIC_PROFILE:END -->
