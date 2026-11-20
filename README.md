@@ -88,6 +88,6 @@
 
 <!-- DYNAMIC_PROFILE:START -->
 <div align="center">
-  <sub>💭 Architectural Principle: <i>"In distributed systems, expect everything to fail all the time. Design idempotent retries and resilient fallbacks."</i></sub>
+  <sub>💭 Architectural Principle: <i>"Premature optimization is the root of all evil, but premature distribution is the architect's nightmare. Keep boundaries clean."</i></sub>
 </div>
 <!-- DYNAMIC_PROFILE:END -->
