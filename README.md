@@ -88,6 +88,6 @@
 
 <!-- DYNAMIC_PROFILE:START -->
 <div align="center">
-  <sub>💭 Architectural Principle: <i>"Premature optimization is the root of all evil, but premature distribution is the architect's nightmare. Keep boundaries clean."</i></sub>
+  <sub>💭 Architectural Principle: <i>"Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. (Linus Torvalds)"</i></sub>
 </div>
 <!-- DYNAMIC_PROFILE:END -->
