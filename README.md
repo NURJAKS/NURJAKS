@@ -88,6 +88,6 @@
 
 <!-- DYNAMIC_PROFILE:START -->
 <div align="center">
-  <sub>💭 Architectural Principle: <i>"Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. (Linus Torvalds)"</i></sub>
+  <sub>💭 Architectural Principle: <i>"Event-driven architecture decouples producers from consumers in time, space, and synchronization."</i></sub>
 </div>
 <!-- DYNAMIC_PROFILE:END -->
